@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Books</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="admin.html">Admin Home</a>
+            <a href="#" id="reports">Reports</a>
+            <a href="#" id="transactions">Transactions</a>
+            <a href="index.html">Log Out</a>
+        </nav>
+    </header>
+
+    <h2>Manage Books</h2>
+
+    <section id="book-list">
+        <h3>Current Book List</h3>
+        <table id="book-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Book list will be loaded here -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="add-book">
+        <h3>Add a New Book</h3>
+        <form id="add-book-form">
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" required>
+            
+            <label for="book-category">Category:</label>
+            <input type="text" id="book-category" required>
+            
+            <button type="submit">Add Book</button>
+        </form>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>
